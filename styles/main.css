@@ -1,0 +1,182 @@
+/*font-family: 'Raleway', sans-serif;*/
+
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+.page{
+    margin:40px;
+}
+a{
+    margin-top: 20px;
+}
+h1{
+    font-size:20px;
+}
+nav{
+    display: flex;
+    justify-content:flex-end;
+    position: relative;
+    font-size:20px;
+    width:100%;
+}
+.nav__inscription{
+    order: 3;
+    padding-top: 15px;
+}
+.nav__link{
+    padding-top: 15px;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+a{
+    padding-right: 20px;
+}
+p{
+    padding: 5px 0 5px 0;
+}
+.header-critere{
+    margin-top: 20px;
+}
+
+@media (max-width:500px){
+    nav{
+        display: flex;
+        flex-wrap:wrap;
+      
+        justify-content:space-between;
+    }
+    .logo{
+        order:1;
+        position: static;
+        width: 50%;
+    }
+    .nav__inscription{
+       order:2;
+       padding-top: 15px;
+    }
+    .nav__link{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        order:3;
+    }
+}
+/*Barre de recherche*/
+form{
+    position: relative;
+}
+.form__field{
+    padding:10px;
+    padding-left:40px;
+    font-weight: bold;
+    border: 1px solid #f2f2f2;
+    border-radius:10px ;
+
+}
+.form__btn{
+    border: none;
+    border-radius: 10px;
+    background-color: #0065FC;
+    color:#fff;
+    padding: 10px;
+}
+form i{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px 0 0px 10px ;
+}
+/*Construction de la partie filtre*/
+.filtre{
+    display: flex;
+    max-width:75%;
+    justify-content: space-between;
+}
+.filtre__btn{
+    border:1px solid #f2f2f2;
+
+}
+/*Bloc présentant les hébergements*/
+.lodge-section{
+    padding: 10px 0 10px 0;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 30px;
+    width:66%;
+}
+.flex-lodge{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lodge-prev{
+    width:200px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border:5px solid #fff;
+    border-radius: 10px;  
+}
+
+.lodge-prev__info{
+    background-color:#fff;
+    height:80px;
+    width: 100%;
+}
+.lodge-prev__heading{
+    padding: 10px;
+}
+.cannebiere{
+    background-image: url("../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    width:200px;
+    height: 200px;
+    background-size: contain;
+}
+.port{
+    background-image: url("../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+.mouette{
+    background-image:url("../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg") ;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+.mer{
+    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+.panier{
+    background-image: url("../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+.amina{
+    background-image: url("../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: flex-start;
+}
+.foot-bloc{
+    width: 33%;
+    padding-left: 2%;
+}
