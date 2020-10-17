@@ -175,13 +175,23 @@ form i{
     margin-top: 20px;
   
 }
+/*Contenu des cartes hébergement*/
 .bloc-prev{
     height: 150px;
     width: 100%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+}
+.bloc-prev > img{
+    height: 60%;
+    background-size: 100% 100%;  
+    border-radius: 10px;
+}
+.bloc-prev > .bloc-prev__info{
+    background-color: #fff;
+    width:100%;
+    height:30%;
 }
 .bloc-prev--pop{
     height: 33%;
@@ -196,41 +206,30 @@ form i{
     width:60%;
     height:100px;
 }
-.bloc-prev__info{
-    background-color: #fff;
-    width:100%;
-    height:70px;
+.img{
+    width:40%;
+   background-size: 100% 100%;  
+   border-radius: 10px;
 }
 .cannebiere{
-    background-image: url(../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: contain;
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .port{
     background-image: url(../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: contain;
 }
 .mouette{
     background-image: url(../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: contain;
 }
 .mer{
     background-image: url(../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: contain;
 }
 .panier{
     background-image: url(../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: contain;
 }
 .amina{
     background-image: url(../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: contain;
 }
 
-.img{
-     width:40%;
-    background-size: 100% 100%;  
-    border-radius: 10px;
-}
 .matin{
     background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     
@@ -240,9 +239,7 @@ form i{
     background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
      
 }
-.bloc-prev--pop > .bloc-prev__info{
-    width: 60%;
-}
+
 .blanc{
     background-image: url(../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
   background-size:100% 100%;
