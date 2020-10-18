@@ -77,6 +77,7 @@ h4{
 /*Barre de recherche*/
 form{
     position: relative;
+    margin-top:5px;
 }
 .form__field{
     padding:10px;
@@ -108,14 +109,39 @@ form i{
 }
 /*Construction de la partie filtre*/
 .filtre{
+    margin-top: 20px;
     display: flex;
-    max-width:75%;
+    width:67%;
     justify-content: space-between;
-    flex-wrap: wrap;
+    font-weight: 700;
+    font-size:12px;
 }
 .filtre__btn{
     border:1px solid #f2f2f2;
+    border-radius: 20px;
+    padding: 10px 15px 10px 0;
 
+}
+.filtre__btn > i {
+    background-color: #deebff;
+    color: #0065FC;
+    padding:11px;
+    border-radius:50%;
+   margin-right:10px;
+}
+.filtre__heading{
+    margin-top:10px;
+}
+.info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.info > i {
+    border: 2px solid #f2f2f2;
+    border-radius: 100%;
+    padding: 7px;
+    margin-right:10px;
 }
 /*Bloc principal*/
 .main{

@@ -15,8 +15,8 @@
                 <ul class="nav__menu">
                     <li class="logo"><a href="#"><img src="images/logo/Reservia.svg" alt="logo de la marque Réservia"></a></li>
                     <li class="nav__link nav__link--inscription"><a href="#">S'inscrire</a></li>
-                    <li class="nav__link nav__link--lodge"><a href="#">Hébergements</a></li>
-                    <li class="nav__link nav__link--act"> <a href="#">Activités</a></li>
+                    <li class="nav__link nav__link--lodge"><a href="#hebergement">Hébergements</a></li>
+                    <li id="activite" class="nav__link nav__link--act"> <a href="#activite">Activités</a></li>
                     
                 </ul>
             </nav>
@@ -27,23 +27,20 @@
             <form action="">
             <span><i class="fas fa-map-marker-alt"></i><input class="form__field" type="search" value='Marseille, Fance' required>
                 <input class="form__btn" type="submit" value="Rechercher"></span>
-            </form>
-            
-           
-                
+            </form>  
                 <ul class="filtre">
-                    <li>Filtres</li>
+                    <li class="filtre__heading">Filtres</li>
                     <li><a class="filtre__btn" ><i class="fas fa-money-bill-wave"></i>Economique</a></li>
                     <li><a class="filtre__btn" ><i class="fas fa-child"></i>Familial</a></li>
                     <li><a class="filtre__btn" ><i class="fas fa-heart"></i>Romantique</a></li>
                     <li><a class="filtre__btn" ><i class="fas fa-dog"></i>Animaux autorisés</a></li>
                 </ul>
            
-           <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+           <p class="info"><i class="fas fa-info fa-xs fa-blue"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
         </header>
             <div class="main">
-                <section class="bloc-hebergement">
+                <section id="hebergement" class="bloc-hebergement">
                     <h2>Hébergement à Marseille</h2>
                     <div class="flex-hebergement">
                         <a href="#">
@@ -147,7 +144,8 @@
             </div>
        
         <!--Section présentant les activités -->
-        <section class="act-section">
+        <section id="activite" class="act-section">
+            <h2>Activités à Marseille</h2>
             <div class="flex-act">
                 <div class="act-prev">
                     <div class="act-prev act-prev__info"></div>
