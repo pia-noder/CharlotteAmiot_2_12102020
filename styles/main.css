@@ -30,31 +30,24 @@ h4{
    
 }
 /*Partie Header*/
-nav{
+.nav__menu{
     display: flex;
-    justify-content:flex-end;
-    position: relative;
-    font-size:20px;
-    width:100%;
-}
-.nav__inscription{
-    order: 3;
-    padding-top: 15px;
-}
-.nav__link{
-    padding-top: 15px;
-}
-nav a{
-    color:#0065FC;
-    font-weight: 600;
-    font-size: 15px;
 }
 .logo{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
+    width: 70%;
+}  
+ .nav__link{
+     width:10%;
+     text-align: end;
+     padding-top:15px;
+ }
+ .nav__link > a {
+     color: #0065FC;
+     font-weight: 700;
+ }
+ .nav__link--inscription{
+     order:3;
+ }
 .header-critere{
     margin-top: 20px;
 }
