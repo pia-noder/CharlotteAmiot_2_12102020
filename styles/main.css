@@ -238,7 +238,12 @@ form{
     background-color: #fff;
     width:60%;
     height:100px;
-    padding:2%;
+    padding-left:2%;
+}
+.bloc-prev__info--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .img{
    width:40%;
@@ -288,8 +293,7 @@ form{
 }
 
 .score--pop{
-    padding-top: 25px;
-    
+    vertical-align: bottom;
 }
 @media (max-width:768px){
     .main{
@@ -327,7 +331,9 @@ form{
 }
 .flex-act > a {
     margin:0;
-    padding: 0;
+    padding:0;
+    border-radius: 10px;
+    box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
    
 }
 .double-image{
@@ -339,6 +345,8 @@ form{
     height:47%;
     margin:0;
     padding:0;
+    border-radius: 10px;
+    box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 
 }
 .act-image__50 {
