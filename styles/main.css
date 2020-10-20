@@ -33,7 +33,7 @@ h2{
     font-size: 17px;
 }
 h4{
-    font-size: 0.7em;
+    font-size: 0.8rem;
    
 }
 /*Partie Header*/
@@ -48,12 +48,16 @@ h4{
      text-align: end;
      padding-top:15px;
  }
+ 
  .nav__link > a {
      color: #0065FC;
-     font-weight: 700;
  }
+ .nav__link--act > a{
+    color: black;
+}
  .nav__link--inscription{
      order:3;
+     font-weight: 700;
  }
 .header-critere{
     margin-top: 20px;
@@ -75,12 +79,17 @@ h4{
     }
     .nav__link--lodge{
         width: 50%;
-        text-align: start;
+        text-align: center;
         order:3;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #0065FC;
     }
     .nav__link--act{
+        text-align: center;
         width: 50%;
         order: 4;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #f2f2f2;
     }
 }
 /*Barre de recherche*/
@@ -92,19 +101,23 @@ form{
     font-size:0;
 }
 .form__field{
-    padding:10px;
+    padding:12px;
     padding-left: 10px;
-    padding-right: 90px;
+    padding-right: 70px;
     font-weight: bold;
     border: 1px solid #f2f2f2;
 }
 .form__btn{
     border: none;
-    border-radius:  0 10px 10px 0;
-    background-color: #0065FC;
+    border-radius:  10px;
+    background-color:transparent;
     color:#fff;
     font-weight: 600;
-    padding: 11px;
+    padding: 3px 3px 2px 3px;
+    position: relative;
+}
+.form__btn:hover{
+    transform: scale(1.05);
 }
 .bloc-form > i{
     display: flex;
@@ -112,6 +125,32 @@ form{
     background-color: #f2f2f2;
     padding:0 10px 0 10px;
     border-radius: 10px 0 0 10px;
+}
+.fa-search{
+    position:absolute;
+    background-color: #0065FC;
+    color: #fff;
+    border-radius: 10px;
+    padding:14px;
+    left: -14px;
+    top:-23px;   
+}
+@media (min-width:800px){
+    button{
+        visibility: hidden;
+    }
+    button::after{
+        content: 'Recherche';
+        visibility: visible;
+        display: block;
+        position: absolute;
+        border-radius: 0 10px 10px 0;
+        padding: 13px;
+        color: #fff;
+        background-color: #0065FC;
+        top: -23px;
+        left: 0;
+    }
 }
 /*Construction de la partie filtre*/
 .filtre{
@@ -339,12 +378,32 @@ form{
 .score--pop{
     vertical-align: bottom;
 }
+@media (max-width:1100px){
+    .main{
+        flex-direction: column;
+    }
+    .bloc-hebergement{
+        width: 100%;
+        order: 2;
+    }
+    .bloc-pop{
+        width: 100%;
+        margin-bottom: 30px;
+        order: 1;
+    }
+    .flex-hebergement > a {
+        min-height:170px ;  
+    }
+   .heading4-pop{
+       font-size: 1.3rem;
+   }
+}
 @media (max-width:800px){
     .main{
         flex-direction: column;
     }
     .bloc-prev{
-        min-height:150px;
+        min-height:190px;
     }
     .bloc-hebergement{
         width: 100%;
@@ -359,8 +418,7 @@ form{
         padding-left: 15px;
     }
     .flex-hebergement > a {
-        width: 48%;
-        
+        width: 48%;  
     }
 }
 @media (max-width:480px){
@@ -369,6 +427,18 @@ form{
     }
     .bloc-pop{
         width: 100%;
+    }
+    .bloc-prev{
+        min-height:190px;
+    }
+    .heading4-pop{
+        font-size: 0.7rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.8rem;
     }
 }
 /*Section activités*/
