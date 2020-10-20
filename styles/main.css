@@ -75,37 +75,34 @@ h4{
     }
 }
 /*Barre de recherche*/
+.bloc-form{
+    display: flex;
+    margin-top:10px;
+}
 form{
-    position: relative;
-    margin-top:5px;
+    font-size:0;
 }
 .form__field{
     padding:10px;
-    padding-left: 60px;
-    padding-right: 100px;
+    padding-left: 10px;
+    padding-right: 90px;
     font-weight: bold;
     border: 1px solid #f2f2f2;
-    border-radius:10px;
-
 }
 .form__btn{
-    position: absolute;
-    top: 1px;
-    left: 250px;
     border: none;
     border-radius:  0 10px 10px 0;
     background-color: #0065FC;
     color:#fff;
     font-weight: 600;
-    padding: 10px;
+    padding: 11px;
 }
-form i{
-    position: absolute;
-    top: 1px;
-    left: 0;
+.bloc-form > i{
+    display: flex;
+    align-items:center;
     background-color: #f2f2f2;
-    padding: 10px 15px 10px 15px;
-    border-radius: 10px 0 0px 10px ;
+    padding:0 10px 0 10px;
+    border-radius: 10px 0 0 10px;
 }
 /*Construction de la partie filtre*/
 .filtre{
@@ -160,13 +157,14 @@ form i{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    height: 80%;
 }
 .flex-hebergement > a {
     width: 31%;
     border: 5px solid #fff;
     border-radius: 10px;
     padding:0;
-    margin-top: 20px;
+    margin-top: 15px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 }
 .bloc-pop{
@@ -174,6 +172,7 @@ form i{
     border-radius: 10px;
     padding: 20px;
     width: 33%;
+    
 }
 /*@media(max-width:1024px){
     .flex-hebergement > a {
@@ -198,7 +197,7 @@ form i{
 }
 /*Contenu des cartes hébergement*/
 .bloc-prev{
-    height: 170px;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
     display: flex;
@@ -272,7 +271,7 @@ form i{
     color: #f2f2f2;
 }
 .afficherPlus{
-    margin-top: 15px;
+    margin-top: 30px;
     padding-left:2%;
     font-weight: 700;
     display: block;
@@ -321,6 +320,14 @@ form i{
 }
 .double-image > a{
     height:50%;
+    margin:0;
+    padding:0;
+}
+.act-image__50 {
+    height: 100%;
+    background-position-y: center;
+    background-size: 100% 200%;  
+    border-radius: 10px 10px 0 0;
 }
 .act__image{
     height: 90%;
