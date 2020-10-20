@@ -126,7 +126,7 @@ form{
     border:1px solid #f2f2f2;
     border-radius: 20px;
     padding: 10px 15px 10px 0;
-    transition:0.5s;
+    transition:0.3s;
 }
 .filtre__btn:hover{
     background-color: #0065FC;
@@ -348,10 +348,12 @@ form{
     }
     .bloc-hebergement{
         width: 100%;
+        order: 2;
     }
     .bloc-pop{
         width: 100%;
-        margin-top: 30px;
+        margin-bottom: 30px;
+        order: 1;
     }
     h2{
         padding-left: 15px;
