@@ -8,6 +8,7 @@
 }
 .page{
     margin:40px;
+    margin-bottom: 0;
 }
 li{
     list-style: none;
@@ -19,14 +20,14 @@ a{
     color: black;
 }
 p{
-    padding: 5px 0 3px 0;
+    padding: 3px 0 3px 0;
     font-size: 0.7em;
 }
 h1{
     font-size:20px;
 }
-h2{
-    padding-left: 15px;
+.heading-lodge{
+    padding-left: 10px;
 }
 h4{
     font-size: 0.7em;
@@ -120,14 +121,19 @@ form{
     border:1px solid #f2f2f2;
     border-radius: 20px;
     padding: 10px 15px 10px 0;
-
+    transition:0.5s;
 }
+.filtre__btn:hover{
+    background-color: #0065FC;
+    color: #fff;
+}
+
 .filtre__btn > i {
     background-color: #deebff;
     color: #0065FC;
     padding:11px;
     border-radius:50%;
-   margin-right:10px;
+   margin-right:11px;
 }
 .filtre__heading{
     margin-top:10px;
@@ -203,6 +209,7 @@ form{
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    
     display: flex;
     flex-direction: column;
     
@@ -217,7 +224,7 @@ form{
     background-color: #fff;
     width:100%;
     height:40%;
-    padding: 3%;
+    padding:2%;
 }
 .bloc-prev--pop{
     height: 33%;
@@ -279,6 +286,7 @@ form{
     font-weight: 700;
     display: block;
 }
+
 .score--pop{
     padding-top: 25px;
     
@@ -305,15 +313,13 @@ form{
 /*Section activités*/
 .act-section{
     margin-top: 15px;
-    padding:20px;
-    background-color: #f2f2f2;
+    padding:20px 0 20px 0;
     border-radius: 10px;
 }
 .flex-act{
-    margin:10px;
+    margin-top:15px;
     display: flex;
     justify-content: space-between;
-    background-color: #f2f2f2;
 }
 
 .flex-act > a, .double-image{
@@ -322,8 +328,7 @@ form{
 .flex-act > a {
     margin:0;
     padding: 0;
-    border: 5px solid #fff;
-    border-radius: 10px;
+   
 }
 .double-image{
     display: flex;
@@ -334,19 +339,24 @@ form{
     height:47%;
     margin:0;
     padding:0;
-    border: 5px solid #fff;
-    border-radius: 10px;
+
 }
 .act-image__50 {
     height: 100%;
-    background-position-y: center;
-    background-size: 100% 200%;  
+    background-position-y: top;
+    background-size: 100% 150%;  
+    border: 5px solid #f2f2f2;
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
+   
 }
 .act__image{
     height: 90%;
     background-position-y: center;
-    background-size: 100% 200%;  
+    background-size: 200% 100%;  
+    background-position: center;
+    border: 5px solid #f2f2f2;
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
 }
 .bloc-prev--bg{
@@ -357,6 +367,8 @@ form{
     width:100%;
     height:40px;
     padding: 3%;
+    border: 5px solid #f2f2f2;
+    border-top: none;
     border-radius: 0 0 10px 10px;
 }
 .vieuxPort{
@@ -381,10 +393,21 @@ form{
 footer{
     display: flex;
     justify-content: flex-start;
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    margin-bottom: 50px;
 }
 .foot-bloc{
     width: 33%;
-    padding-left: 2%;
+    padding-left: 3%;
+    padding-bottom: 10px;
+}
+.foot-bloc > h4 {
+    margin-bottom: 3px;
+}
+.foot-list > a{
+    padding: 15px 0 15px 0;
+    font-size: 10px;
 }
 /* clears the 'X' from Chrome */
 input[type="search"]::-webkit-search-decoration,
