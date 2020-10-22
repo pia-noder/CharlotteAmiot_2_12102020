@@ -266,6 +266,7 @@ form{
     padding: 20px;
     width: 66%;
     margin-right: 2%;
+    min-height: 600px;
 }
 
 .flex-hebergement{
@@ -295,12 +296,13 @@ form{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 94%;
 }
 .flex-pop > a {
     width: 95%;
     border: 5px solid #fff;
     border-radius: 10px;
-    height: 31%;
+    height: 33%;
     padding: 0;
     margin-top: 20px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
@@ -335,7 +337,7 @@ form{
     justify-content: space-between;
 }
 .bloc-prev--pop{
-    height: 33%;
+    height: 100%;
     min-height:100px;
     width: 100%;
     display: flex;
@@ -345,7 +347,7 @@ form{
 .bloc-prev--pop > .bloc-prev__info{
     background-color: #fff;
     width:70%;
-    height:100px;
+    height:100%;
     padding-left:2%;
 }
 .bloc-prev__info--flex{
@@ -355,6 +357,7 @@ form{
 }
 .img{
    width:30%;
+   min-width:150px;
    background-size: cover;  
    border-radius: 10px 0 0 10px;
 }
@@ -419,11 +422,13 @@ form{
         order: 1;
     }
     .flex-hebergement > a {
-        min-height:170px ;  
+        min-height:200px ;
+        
     }
    .heading4-pop{
        font-size: 1.3rem;
    }
+   
 }
 @media (max-width:800px){
     .main{
