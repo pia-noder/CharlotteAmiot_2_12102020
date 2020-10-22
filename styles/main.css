@@ -20,8 +20,8 @@ a{
     color: black;
 }
 p{
-    padding: 3px 0 3px 0;
-    font-size: 0.7em;
+    padding: 3px 0 1px 0;
+    font-size: 0.8em;
 }
 h1{
     font-size:20px;
@@ -30,10 +30,10 @@ h1{
     padding-left: 10px;
 }
 h2{
-    font-size: 17px;
+    font-size: 1.4rem;
 }
 h4{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
    
 }
 /*Partie Header*/
@@ -152,6 +152,17 @@ form{
         left: 0;
     }
 }
+@media (max-width:480px){
+    .page{
+        margin: 10px;
+    }
+    .bloc-form{
+        padding-left: 20px;
+    }
+    .form__field{
+        padding-right:30px;
+    }
+}
 /*Construction de la partie filtre*/
 .filtre{
     margin-top: 20px;
@@ -190,7 +201,7 @@ form{
 @media (max-width:610px){
     .filtre{
         flex-wrap: wrap;
-        font-size: 75%;
+        font-size: 12px;
         justify-content: start;
     }
     .filtre__heading, .filtre__btn--rom, .filtre__btn--ani{
@@ -204,25 +215,35 @@ form{
     }
     li.filtre__btn--fam{
         margin-left:0;
+        padding:0;
     }
 }
 @media (max-width:480px){
     .flitre{
-        font-size: 40%;
+        font-size: 8px;
+    }
+    .filtre__btn--eco{
+        width: 50%;
+    }
+    .filtre > li{
+        margin:10px 0; 
     }
     .filtre__btn--fam{
-        padding-left:45px;
+        width: 40%;
     }
 }
+/**/
 .info{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
 }
+
 @media (max-width:480px){
     .info{
         font-size: 19px;
     }
+    
 }
 .info > i {
     border: 2px solid #f2f2f2;
@@ -319,7 +340,7 @@ form{
 }
 .bloc-prev--pop > .bloc-prev__info{
     background-color: #fff;
-    width:60%;
+    width:70%;
     height:100px;
     padding-left:2%;
 }
@@ -329,28 +350,29 @@ form{
     justify-content: space-between;
 }
 .img{
-   width:40%;
+   width:30%;
    background-size: cover;  
    border-radius: 10px 0 0 10px;
 }
 .cannebiere{
-    background-image: url(../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .port{
-    background-image: url(../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 .mouette{
-    background-image: url(../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 .mer{
-    background-image: url(../images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 .panier{
-    background-image: url(../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 .amina{
-    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
+
 .matin{
     background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     
@@ -359,7 +381,7 @@ form{
     background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg); 
 }
 .blanc{
-    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
   background-size:100% 100%;
 }
 .fa-blue{
@@ -387,7 +409,8 @@ form{
         order: 2;
     }
     .bloc-pop{
-        width: 100%;
+        margin: 0 auto;
+        width: 50%;
         margin-bottom: 30px;
         order: 1;
     }
@@ -432,7 +455,7 @@ form{
         min-height:190px;
     }
     .heading4-pop{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     h4{
         font-size: 0.8rem;
