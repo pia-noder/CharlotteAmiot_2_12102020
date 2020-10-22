@@ -234,9 +234,13 @@ form{
 }
 /**/
 .info{
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
+}
+.info > p{
+    padding-top: 7px;
 }
 
 @media (max-width:480px){
