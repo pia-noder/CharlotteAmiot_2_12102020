@@ -33,7 +33,7 @@ h2{
     font-size: 1.4rem;
 }
 h4{
-    font-size: 0.9rem;
+    font-size: 1rem;
    
 }
 /*Partie Header*/
@@ -324,6 +324,9 @@ form{
     border-radius: 10px 10px 0 0;
 }
 .bloc-prev > .bloc-prev__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     width:100%;
     height:40%;
@@ -404,7 +407,9 @@ form{
     font-weight: 700;
     display: block;
 }
-
+.score{
+    bottom:0;
+}
 .score--pop{
     vertical-align: bottom;
 }
@@ -414,6 +419,7 @@ form{
     }
     .bloc-hebergement{
         width: 100%;
+        min-height: 500px;
         order: 2;
     }
     .bloc-pop{
@@ -423,12 +429,8 @@ form{
         order: 1;
     }
     .flex-hebergement > a {
-        min-height:200px ;
-        
+        min-height:200px ;   
     }
-   .heading4-pop{
-       font-size: 1.4rem;
-   }
    .heading4-pop+p{
         font-size: 1rem;
    }
@@ -468,11 +470,8 @@ form{
     .bloc-prev{
         min-height:190px;
     }
-    .heading4-pop{
-        font-size: 1rem;
-    }
     h4{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     p{
         font-size: 0.8rem;
