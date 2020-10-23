@@ -514,7 +514,7 @@ form{
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 
 }
-.act-image__50 {
+.bloc-prov-acti__image2x {
     height: 100%;
     background-position-y: top;
     background-size: 100% 150%;  
@@ -523,7 +523,7 @@ form{
     border-radius: 10px 10px 0 0;
    
 }
-.act__image{
+.bloc-prev-acti__image{
     height: 90%;
     background-position-y: center;
     background-size: 200% 100%;  
@@ -535,11 +535,7 @@ form{
 .bloc-prev--bg{
     height:400px;
 }
-.bloc-prev__info--act{
-    background-color: #fff;
-    width:100%;
-    height:40px;
-    padding: 3%;
+.bloc-prev__info--border{
     border: 5px solid #f2f2f2;
     border-top: none;
     border-radius: 0 0 10px 10px;
