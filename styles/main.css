@@ -36,6 +36,13 @@ h4{
     font-size: 1rem;
    
 }
+   /*couleur icon étoile*/
+.fa-blue{
+    color: #0065FC;
+}
+.fa-grey{
+    color: #f2f2f2;
+}
 /*Partie Header*/
 .nav__menu{
     display: flex;
@@ -59,7 +66,7 @@ h4{
      order:3;
      font-weight: 700;
  }
-.header-critere{
+.header-select{
     margin-top: 20px;
 }
 
@@ -164,7 +171,7 @@ form{
     }
 }
 /*Construction de la partie filtre*/
-.filtre{
+.bloc-filtre{
     margin-top: 20px;
     display: flex;
     width:67%;
@@ -194,12 +201,12 @@ form{
     margin-top:10px;
 }
 @media (max-width:1100px){
-    .filtre{
+    .bloc-filtre{
         width: 100%;
     }
 }
 @media (max-width:610px){
-    .filtre{
+    .bloc-filtre{
         flex-wrap: wrap;
         font-size: 12px;
         justify-content: start;
@@ -210,7 +217,7 @@ form{
     .filtre__btn--fam, .filtre__btn--eco{
         width: 40%;
     }
-    .filtre > li {
+    .bloc-filtre > li {
         margin: 20px 0 20px 20px; 
     }
     li.filtre__btn--fam{
@@ -219,54 +226,51 @@ form{
     }
 }
 @media (max-width:480px){
-    .flitre{
-        font-size: 8px;
-    }
     .filtre__btn--eco{
         width: 50%;
     }
-    .filtre > li{
+    .bloc-filtre > li{
         margin:10px 0; 
     }
     .filtre__btn--fam{
         width: 40%;
     }
 }
-/**/
-.info{
+/*Petite phrase informative sur le nombre de logement dispo sur le site*/
+.parag-info{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
 }
-.info > p{
+.parag-info > p{
     padding-top: 7px;
 }
 
 @media (max-width:480px){
-    .info{
+    .parag-info{
         font-size: 19px;
     }
     
 }
-.info > i {
+.parag-info > i {
     border: 2px solid #f2f2f2;
     border-radius: 100%;
     padding: 7px;
     margin-right:10px;
 }
-/*Bloc principal*/
-.main{
+/*Bloc principal: hébergement + populaire*/
+.flex-main{
     display: flex;
     justify-content: space-around;
 }
 .bloc-hebergement{
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 20px;
     width: 66%;
+    padding: 20px;
     margin-right: 2%;
     min-height: 600px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
 }
 
 .flex-hebergement{
@@ -277,20 +281,18 @@ form{
 }
 .flex-hebergement > a {
     width: 31%;
-    border: 5px solid #fff;
-    border-radius: 10px;
     padding:0;
     margin-top: 15px;
+    border: 5px solid #fff;
+    border-radius: 10px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 }
 .bloc-pop{
+    width: 33%;
+    padding: 20px;
     background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 20px;
-    width: 33%;
-    
 }
-
 .flex-pop{
     display: flex;
     flex-direction: column;
@@ -300,71 +302,41 @@ form{
 }
 .flex-pop > a {
     width: 95%;
-    border: 5px solid #fff;
-    border-radius: 10px;
     height: 33%;
     padding: 0;
     margin-top: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
   
 }
 /*Contenu des cartes hébergement*/
 .bloc-prev{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     
 }
-.image{
+.bloc-prev__image{
     height: 60%;
-    background-position-y: center;
+    background-position-y: center; /*pour recentrer l'image*/
     background-size: 100% 200%;  
     border-radius: 10px 10px 0 0;
 }
-.bloc-prev > .bloc-prev__info{
+.bloc-prev__info{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #fff; 
+}
+.bloc-prev > .bloc-prev__info{ 
     width:100%;
     height:40%;
-    padding:2%;
+    padding:2%;  
 }
-.fa-chart-line{
-    padding-right: 15px;
-}
-.heading-pop{
-    display: flex;
-    justify-content: space-between;
-}
-.bloc-prev--pop{
-    height: 100%;
-    min-height:100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.bloc-prev--pop > .bloc-prev__info{
-    background-color: #fff;
-    width:70%;
-    height:100%;
-    min-height: 100px;
-    padding-left:2%;
-}
-.bloc-prev__info--flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.img{
-   width:30%;
-   min-width:150px;
-   background-size: cover;  
-   border-radius: 10px 0 0 10px;
-}
+
 .cannebiere{
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
@@ -384,6 +356,41 @@ form{
     background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
+.afficherPlus{
+    margin-top: 30px;
+    padding-left:2%;
+    font-weight: 700;
+    display: block;
+}
+/*Contenu des cartes populaire*/
+.heading-pop{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-chart-line{
+    padding-right: 15px; /*positionnement du petit icon*/
+}
+.bloc-prev-pop{
+     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    min-height:100px;
+    width: 100%;
+}
+.bloc-prev-pop__image{
+   width:30%;
+   min-width:150px;
+   background-size: cover;  
+   border-radius: 10px 0 0 10px;
+}
+.bloc-prev-pop > .bloc-prev__info{
+    width:70%;
+    height:100%;
+    min-height: 100px;
+    padding-left:2%;
+}
+
 .matin{
     background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     
@@ -395,26 +402,12 @@ form{
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
   background-size:100% 100%;
 }
-.fa-blue{
-    color: #0065FC;
-}
-.fa-grey{
-    color: #f2f2f2;
-}
-.afficherPlus{
-    margin-top: 30px;
-    padding-left:2%;
-    font-weight: 700;
-    display: block;
-}
-.score{
-    bottom:0;
-}
 .score--pop{
     vertical-align: bottom;
 }
+
 @media (max-width:1100px){
-    .main{
+    .flex-main{
         flex-direction: column;
     }
     .bloc-hebergement{
@@ -431,34 +424,35 @@ form{
     .flex-hebergement > a {
         min-height:200px ;   
     }
-   .heading4-pop+p{
+   p{
         font-size: 1rem;
    }
    .bloc-prev__info
    
 }
 @media (max-width:800px){
-    .main{
+    .flex-main{
         flex-direction: column;
     }
-    .bloc-prev{
-        min-height:190px;
-    }
-    .bloc-hebergement{
+     .bloc-hebergement{
         width: 100%;
         order: 2;
+    }
+    .flex-hebergement > a {
+        width: 48%;  
     }
     .bloc-pop{
         width: 100%;
         margin-bottom: 30px;
         order: 1;
     }
+    .bloc-prev{
+        min-height:190px;
+    }
+   
     h2{
         padding-left: 15px;
-    }
-    .flex-hebergement > a {
-        width: 48%;  
-    }
+    } 
 }
 @media (max-width:480px){
     .flex-hebergement  > a {
@@ -470,29 +464,34 @@ form{
     .bloc-prev{
         min-height:190px;
     }
+    .bloc-prev-pop{
+        max-height: 100px;
+    }
+    .bloc-prev-pop__image{
+        min-width: 90px;
+    }
     h4{
         font-size: 1rem;
     }
     p{
         font-size: 0.8rem;
     }
-    .img{
-        min-width: 100px;
-    }
 }
+
+
 /*Section activités*/
-.act-section{
+.bloc-acti{
     margin-top: 15px;
     padding:20px 0 20px 0;
     border-radius: 10px;
 }
 .flex-act{
-    margin-top:15px;
     display: flex;
     justify-content: space-between;
+    margin-top:15px;
 }
 
-.flex-act > a, .double-image{
+.flex-act > a, .bloc-imagex2{/*largeur des blocs à l'horizontale*/
     width: 23.5%;
 }
 .flex-act > a {
@@ -502,12 +501,12 @@ form{
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
    
 }
-.double-image{
+.bloc-imagex2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.double-image > a{
+.bloc-imagex2 > a{
     height:47%;
     margin:0;
     padding:0;
@@ -567,13 +566,13 @@ form{
     .flex-act{
         flex-wrap: wrap;
     }
-    .flex-act > a, .double-image{
+    .flex-act > a, .bloc-imagex2{
         margin-top:20px;
         width: 48.5%;
     }
 }
 @media (max-width:480px){
-    .flex-act > a, .double-image{
+    .flex-act > a, .bloc-imagex2{
         margin-top:20px;
         width: 100%;
     }
