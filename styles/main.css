@@ -427,8 +427,6 @@ form{
    p{
         font-size: 1rem;
    }
-   .bloc-prev__info
-   
 }
 @media (max-width:800px){
     .flex-main{
@@ -484,7 +482,7 @@ form{
     margin-top: 15px;
     padding:20px 0 20px 0;
     border-radius: 10px;
-    height: 550px;
+    height: 100%;
 }
 .flex-act{
     display: flex;
@@ -495,10 +493,9 @@ form{
 
 .flex-act > a, .bloc-imagex2{/*largeur des blocs à l'horizontale*/
     width: 23.5%;
-
 }
 .flex-act > a {
-    height: 100%;
+    height:450px;
     margin:0;
     padding:0;
     border-radius: 10px;
@@ -518,13 +515,13 @@ form{
 }
 /*Indication de la hauteur pour les images Pomègues et Frioul*/
 .bloc-imagex2--hauteur-l{
-    height: 60%;
+    height: 250px;
 }
 .bloc-imagex2--hauteur-m{
-    height: 47%;
+    height: 200px;
 }
 .bloc-imagex2--hauteur-s{
-    height: 35%;
+    height: 150px;
 }
 /*---------------------------------*/
 .bloc-prov-acti__image2x {
@@ -560,7 +557,11 @@ form{
     border-top: none;
     border-radius: 0 0 10px 10px;
 }
-
+.bloc-prev__info--border{
+    border: 5px solid #f2f2f2;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
 .vieuxPort{
     background-image: url(../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
@@ -579,7 +580,7 @@ form{
 .longchamp{
     background-image:url(../images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
-@media (max-width:1100px){
+@media (max-width:800px){
     .flex-act{
         flex-wrap: wrap;
     }
@@ -592,6 +593,19 @@ form{
     .flex-act > a, .bloc-imagex2{
         margin-top:20px;
         width: 100%;
+    }
+    /*Indication de la hauteur pour les images Pomègues et Frioul*/
+    .bloc-imagex2--hauteur-l{
+        height: 200px;
+    }
+    .bloc-imagex2--hauteur-m{
+        height: 200px;
+    }
+    .bloc-imagex2--hauteur-s{
+        height: 200px;
+    }
+    .flex-act > a {
+        height:250px;
     }
 }
 /*Footer*/
