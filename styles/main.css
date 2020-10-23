@@ -484,17 +484,21 @@ form{
     margin-top: 15px;
     padding:20px 0 20px 0;
     border-radius: 10px;
+    height: 550px;
 }
 .flex-act{
     display: flex;
     justify-content: space-between;
     margin-top:15px;
+    height: 90%;
 }
 
 .flex-act > a, .bloc-imagex2{/*largeur des blocs à l'horizontale*/
     width: 23.5%;
+
 }
 .flex-act > a {
+    height: 100%;
     margin:0;
     padding:0;
     border-radius: 10px;
@@ -507,13 +511,22 @@ form{
     justify-content: space-between;
 }
 .bloc-imagex2 > a{
-    height:47%;
     margin:0;
     padding:0;
     border-radius: 10px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
-
 }
+/*Indication de la hauteur pour les images Pomègues et Frioul*/
+.bloc-imagex2--hauteur-l{
+    height: 60%;
+}
+.bloc-imagex2--hauteur-m{
+    height: 47%;
+}
+.bloc-imagex2--hauteur-s{
+    height: 35%;
+}
+/*---------------------------------*/
 .bloc-prov-acti__image2x {
     height: 100%;
     background-position-y: top;
@@ -532,14 +545,22 @@ form{
     border-bottom: none;
     border-radius: 10px 10px 0 0;
 }
-.bloc-prev--bg{
-    height:400px;
+
+.bloc-prev-acti{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
-.bloc-prev__info--border{
+.bloc-prev-acti > .bloc-prev__info{
+    min-height:50px;
+    padding: 15px 0 15px 5px;
     border: 5px solid #f2f2f2;
     border-top: none;
     border-radius: 0 0 10px 10px;
 }
+
 .vieuxPort{
     background-image: url(../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
