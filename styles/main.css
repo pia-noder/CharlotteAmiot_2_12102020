@@ -161,7 +161,7 @@ form{
 }
 @media (max-width:480px){
     .page{
-        margin: 10px;
+        margin: 30px;
     }
     .bloc-form{
         padding-left: 20px;
@@ -354,6 +354,8 @@ form{
 }
 .amina{
     background-image: url(../images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: 100% 250%;
+    background-position-y: center;
 }
 
 .afficherPlus{
@@ -400,13 +402,17 @@ form{
 }
 .blanc{
     background-image: url(../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-  background-size:100% 100%;
+    background-size:100% 100%;
 }
 .score--pop{
     vertical-align: bottom;
 }
 
 @media (max-width:1100px){
+    .blanc{
+        background-size:100% 150%;
+        background-position-y:center;
+    }
     .flex-main{
         flex-direction: column;
     }
@@ -536,7 +542,7 @@ form{
 .bloc-prev-acti__image{
     height: 90%;
     background-position-y: center;
-    background-size: 200% 100%;  
+    background-size: 100% 100%;  
     background-position: center;
     border: 5px solid #f2f2f2;
     border-bottom: none;
@@ -564,15 +570,21 @@ form{
 }
 .vieuxPort{
     background-image: url(../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: 150% 100%;
+    background-position-y: center;
 }
 .pomegues{
     background-image: url(../images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: 100% 200%;
+    background-position-y: center;
 }
 .frioul{
     background-image: url(../images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 .calanques{
     background-image: url(../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: 150% 100%;
+    background-position-y: center;
 }
 .notre-dame{
     background-image: url(../images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg);
@@ -590,6 +602,9 @@ form{
     }
 }
 @media (max-width:480px){
+    .longchamp{
+        background-position-y: center;
+    }
     .flex-act > a, .bloc-imagex2{
         margin-top:20px;
         width: 100%;
@@ -603,6 +618,12 @@ form{
     }
     .bloc-imagex2--hauteur-s{
         height: 200px;
+    }
+    .bloc-prev-acti__image{
+        background-size: 200% 200%;
+    }
+    .bloc-prov-acti__image2x{
+        background-size: cover;
     }
     .flex-act > a {
         height:250px;
