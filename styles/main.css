@@ -25,6 +25,7 @@ p{
 }
 h1{
     font-size:20px;
+    margin-bottom: 15px;
 }
 .heading-lodge{
     padding-left: 10px;
@@ -59,8 +60,12 @@ h4{
  .nav__link > a {
      color: #0065FC;
  }
- .nav__link--act > a{
+ .nav__link--lodge > a, .nav__link--act > a{
     color: black;
+}
+.nav__link--lodge > a:hover, .nav__link--act > a:hover{
+    color: #0065FC;
+    font-weight: bold;
 }
  .nav__link--inscription{
      order:3;
@@ -88,21 +93,38 @@ h4{
         width: 50%;
         text-align: center;
         order:3;
-        padding-bottom: 5px;
+    }
+    .nav__link--lodge > a {
+        margin:0;
+        display: block;
+        width: 100%;
+        padding-bottom: 5px ;
+        border-bottom: 2px solid #f2f2f2;
+    }
+    .nav__link--lodge > a:hover{
         border-bottom: 2px solid #0065FC;
     }
+    
     .nav__link--act{
         text-align: center;
         width: 50%;
         order: 4;
-        padding-bottom: 5px;
+    }
+    .nav__link--act > a{
+        margin:0;
+        display: block;
+        width: 100%;
+        padding-bottom: 5px ;
         border-bottom: 2px solid #f2f2f2;
+    }
+    .nav__link--act > a:hover{
+        border-bottom: 2px solid #0065FC;
     }
 }
 /*Barre de recherche*/
 .bloc-form{
     display: flex;
-    margin-top:10px;
+    margin-top:25px;
 }
 form{
     font-size:0;
@@ -159,16 +181,19 @@ form{
         left: 0;
     }
 }
+@media (max-width:800px){
+    .bloc-form{
+        justify-content: center;
+    }
+}
 @media (max-width:480px){
     .page{
         margin: 30px;
     }
     .bloc-form{
-        padding-left: 20px;
+        justify-content: center;
     }
-    .form__field{
-        padding-right:30px;
-    }
+  
 }
 /*Construction de la partie filtre*/
 .bloc-filtre{
@@ -205,7 +230,7 @@ form{
         width: 100%;
     }
 }
-@media (max-width:610px){
+@media (max-width:680px){
     .bloc-filtre{
         flex-wrap: wrap;
         font-size: 12px;
@@ -270,7 +295,7 @@ form{
     margin-right: 2%;
     min-height: 600px;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .flex-hebergement{
@@ -284,14 +309,14 @@ form{
     padding:0;
     margin-top: 15px;
     border: 5px solid #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 }
 .bloc-pop{
     width: 33%;
     padding: 20px;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .flex-pop{
     display: flex;
@@ -306,7 +331,7 @@ form{
     padding: 0;
     margin-top: 20px;
     border: 5px solid #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
   
 }
@@ -316,14 +341,14 @@ form{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
     
 }
 .bloc-prev__image{
     height: 60%;
     background-position-y: center; /*pour recentrer l'image*/
     background-size: 100% 200%;  
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 .bloc-prev__info{
     display: flex;
@@ -339,12 +364,15 @@ form{
 
 .cannebiere{
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-position-y: center;
 }
 .port{
     background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-position-y: center;
 }
 .mouette{
     background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-position-y: center;
 }
 .mer{
     background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
@@ -384,7 +412,7 @@ form{
    width:30%;
    min-width:150px;
    background-size: cover;  
-   border-radius: 10px 0 0 10px;
+   border-radius: 15px 0 0 15px;
 }
 .bloc-prev-pop > .bloc-prev__info{
     width:70%;
@@ -487,7 +515,7 @@ form{
 .bloc-acti{
     margin-top: 15px;
     padding:20px 0 20px 0;
-    border-radius: 10px;
+    border-radius: 15px;
     height: 100%;
 }
 .flex-act{
@@ -504,7 +532,7 @@ form{
     height:450px;
     margin:0;
     padding:0;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
    
 }
@@ -516,18 +544,18 @@ form{
 .bloc-imagex2 > a{
     margin:0;
     padding:0;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 6px 9px 25px -18px rgba(0,0,0,1);
 }
 /*Indication de la hauteur pour les images Pomègues et Frioul*/
 .bloc-imagex2--hauteur-l{
-    height: 250px;
+    height: 230px;
 }
 .bloc-imagex2--hauteur-m{
     height: 200px;
 }
 .bloc-imagex2--hauteur-s{
-    height: 150px;
+    height: 180px;
 }
 /*---------------------------------*/
 .bloc-prov-acti__image2x {
@@ -536,7 +564,7 @@ form{
     background-size: 100% 150%;  
     border: 5px solid #f2f2f2;
     border-bottom: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
    
 }
 .bloc-prev-acti__image{
@@ -546,7 +574,7 @@ form{
     background-position: center;
     border: 5px solid #f2f2f2;
     border-bottom: none;
-    border-radius: 10px 10px 0 0;
+    border-radius: 15px 15px 0 0;
 }
 
 .bloc-prev-acti{
@@ -554,23 +582,24 @@ form{
     flex-direction: column;
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 .bloc-prev-acti > .bloc-prev__info{
-    min-height:50px;
+    min-height:60px;
+    height:10%;
     padding: 15px 0 15px 5px;
     border: 5px solid #f2f2f2;
     border-top: none;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
 }
 .bloc-prev__info--border{
     border: 5px solid #f2f2f2;
     border-top: none;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 15px 15px;
 }
 .vieuxPort{
     background-image: url(../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    background-size: 150% 100%;
+    background-size: 200% 100%;
     background-position-y: center;
 }
 .pomegues{
@@ -583,7 +612,7 @@ form{
 }
 .calanques{
     background-image: url(../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-    background-size: 150% 100%;
+    background-size: 250% 100%;
     background-position-y: center;
 }
 .notre-dame{
@@ -671,3 +700,8 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
+@media (max-width:575px){
+    .p__size{
+        font-size:0.7rem;
+    }
+}
