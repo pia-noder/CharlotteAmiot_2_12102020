@@ -668,7 +668,7 @@ footer{
 }
 .foot-bloc{
     width: 33%;
-    padding-left: 3%;
+    padding-left: 40px;
     padding-bottom: 10px;
 }
 .foot-bloc > h4 {
@@ -678,13 +678,14 @@ footer{
     padding: 15px 0 15px 0;
     font-size: 10px;
 }
+
 @media (max-width:480px){
     footer{
         flex-direction: column;
     }
     .foot-bloc{
         width: 100%;
-        padding-left: 10%;
+        padding-left: 30px;
         padding-bottom: 20px;
     }
     .foot-bloc > h4 {
