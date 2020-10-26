@@ -164,7 +164,7 @@ form{
     left: -14px;
     top:-23px;   
 }
-@media (min-width:800px){
+@media (min-width:830px){
     button{
         visibility: hidden;
     }
@@ -181,7 +181,7 @@ form{
         left: 0;
     }
 }
-@media (max-width:800px){
+@media (max-width:830px){
     .bloc-form{
         justify-content: center;
     }
@@ -462,7 +462,7 @@ form{
         font-size: 1rem;
    }
 }
-@media (max-width:800px){
+@media (max-width:830px){
     .flex-main{
         flex-direction: column;
     }
@@ -592,11 +592,7 @@ form{
     border-top: none;
     border-radius: 0 0 20px 20px;
 }
-.bloc-prev__info--border{
-    border: 5px solid #f2f2f2;
-    border-top: none;
-    border-radius: 0 0 20px 20px;
-}
+
 .vieuxPort{
     background-image: url(../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: 200% 100%;
@@ -637,6 +633,9 @@ form{
     .flex-act > a, .bloc-imagex2{
         margin-top:20px;
         width: 100%;
+    }
+    .bloc-imagex2 > a:nth-child(2){
+        margin-top:20px;
     }
     /*Indication de la hauteur pour les images Pomègues et Frioul*/
     .bloc-imagex2--hauteur-l{
