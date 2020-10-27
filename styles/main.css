@@ -617,7 +617,7 @@ form{
 .longchamp{
     background-image:url(../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
-@media (max-width:800px){
+@media (max-width:830px){
     .flex-act{
         flex-wrap: wrap;
     }
