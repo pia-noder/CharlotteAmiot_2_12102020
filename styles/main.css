@@ -188,10 +188,13 @@ form{
 }
 @media (max-width:480px){
     .page{
-        margin: 30px;
+        margin: 20px;
     }
     .bloc-form{
         justify-content: center;
+    }
+    .form__field{
+        padding-right:30px;
     }
   
 }
