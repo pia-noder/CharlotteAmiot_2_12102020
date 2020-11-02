@@ -267,12 +267,10 @@ form{
 /*Petite phrase informative sur le nombre de logement dispo sur le site*/
 .parag-info{
     display: flex;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
-}
-.parag-info > p{
-    padding-top: 7px;
 }
 
 @media (max-width:480px){
