@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .page{
-    margin:30px;
+    margin:0 30px;
     margin-bottom: 0;
 }
 li{
@@ -48,13 +48,15 @@ h4{
 .nav__menu{
     display: flex;
 }
+
 .logo{
     width: 70%;
+    padding-top: 15px;
 }  
  .nav__link{
      width:10%;
      text-align: end;
-     padding-top:15px;
+     padding-top:30px;
  }
  
  .nav__link > a {
@@ -62,10 +64,20 @@ h4{
  }
  .nav__link--lodge > a, .nav__link--act > a{
     color: black;
+    padding-right: 0;
+    
+}
+.nav__link--act, .nav__link--lodge{
+    text-align: center;
 }
 .nav__link--lodge > a:hover, .nav__link--act > a:hover{
     color: #0065FC;
     font-weight: bold;
+}
+@media(min-width:1100px){
+.nav__link--lodge:hover, .nav__link--act:hover{
+    border-top: 3px solid #0065FC;
+    }
 }
  .nav__link--inscription{
      order:3;
@@ -74,6 +86,7 @@ h4{
 .header-select{
     margin-top: 20px;
 }
+
 
 @media (max-width:1100px){
     .nav__menu{
@@ -162,22 +175,20 @@ form{
     border-radius: 10px;
     padding:14px;
     left: -14px;
-    top:-23px;   
+    top:-22px;   
 }
 @media (min-width:830px){
-    button{
-        visibility: hidden;
+    .fa-search {
+        display: none;
     }
     button::after{
         content: 'Recherche';
-        visibility: visible;
-        display: block;
         position: absolute;
         border-radius: 0 10px 10px 0;
         padding: 13px;
         color: #fff;
         background-color: #0065FC;
-        top: -23px;
+        top: -22px;
         left: 0;
     }
 }
@@ -221,9 +232,9 @@ form{
 .filtre__btn > i {
     background-color: #deebff;
     color: #0065FC;
-    padding:11px;
+    padding:12px 10px;
     border-radius:50%;
-    margin-right:11px;
+    margin-right:10px;
 }
 .filtre__heading{
     margin-top:10px;
@@ -282,7 +293,7 @@ form{
 .parag-info > i {
     border: 2px solid #f2f2f2;
     border-radius: 100%;
-    padding: 7px;
+    padding: 5px 8px;
     margin-right:10px;
 }
 /*Bloc principal: hébergement + populaire*/
@@ -664,7 +675,6 @@ footer{
     justify-content: flex-start;
     background-color: #f2f2f2;
     padding-top: 20px;
-    margin-bottom: 50px;
 }
 .foot-bloc{
     width: 33%;
